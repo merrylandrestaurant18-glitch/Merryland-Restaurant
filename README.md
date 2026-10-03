@@ -9,11 +9,11 @@
   <br />
   <br />
 
-  <h2 align="center">Grilli - Restaurant Website</h2>
+  <h2 align="center">Merry Land Restaurant</h2>
 
-  Grilli is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+  A responsive restaurant website built with Next.js, React, and TypeScript.
 
-  <a href="https://codewithsadee.github.io/grilli/"><strong>➥ Live Demo</strong></a>
+  The Next.js application and its required assets are in the [`frontend`](./frontend) directory.
 
 </div>
 
@@ -23,27 +23,21 @@
 
 ![Grilli Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Grilli** locally, run this command on your git bash:
-
-Linux and macOS:
+### Run locally
 
 ```bash
-sudo git clone https://github.com/codewithsadee/grilli.git
+cd frontend
+npm ci
+npm run dev
 ```
 
-Windows:
+Open `http://localhost:3000`.
 
-```bash
-git clone https://github.com/codewithsadee/grilli.git
-```
+### Deploy to Vercel
+
+Import this repository and set the Vercel **Root Directory** to `frontend`.
+Use the Next.js framework preset and leave the Output Directory at its default.
+The production build command is `npm run build`.
 
 ### Contact
 
