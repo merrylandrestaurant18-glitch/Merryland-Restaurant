@@ -1,0 +1,1861 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Merry Land Restaurant - Best Restaurant in Kajiado & Kiserian | Fine Dining</title>
+  <meta name="title" content="Best Restaurant in Kajiado & Kiserian - Merry Land Restaurant">
+  <meta name="description" content="Discover the best restaurant in Kajiado & Kiserian. Merry Land Restaurant offers fine dining, grilled specialties, nyama choma, premium drinks, and authentic Kenyan cuisine. Located at Kiserian riverside off Kiserian Ngong Road. Make reservations online or call 0741170871.">
+ 
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Custom menu styling for drinks and food on homepage -->
+  <style>
+    #menu .grid-list,
+    #food .grid-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    #menu .menu-card,
+    #food .menu-card {
+      display: flex !important;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #menu .menu-card:hover,
+    #food .menu-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #menu .card-banner,
+    #food .card-banner {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    #menu .card-banner img,
+    #food .card-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #menu .menu-card > div:last-child,
+    #food .menu-card > div:last-child {
+      flex: 1;
+    }
+
+    #menu .title-wrapper,
+    #food .title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    #menu .title-3,
+    #food .title-3 {
+      margin: 0;
+    }
+
+    #menu .card-text,
+    #food .card-text {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      #menu .grid-list,
+      #food .grid-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+  <link rel="preload" as="image" href="./assets/images/chapo.jpeg">
+  <link rel="preload" as="image" href="./assets/images/merry.jpeg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">merryland restaurant </p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Kiserian Town Riverside, Off Kiserian Ngong Road
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 24 Hours</span>
+      </div>
+
+      <a href="tel:+254741170871" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">0741170871</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@merrylandrestaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#home" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#home" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="food-menu.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Food Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="chefs.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            merryLand and lounge restaurant  <br>
+          
+          </address>
+
+          <p class="body-4 navbar-text">Open: 24 Hours</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">info@.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="https://wa.me/254741170871" class="body-1 contact-number hover-underline" target="_blank">
+            0741170871
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#reservation" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/merry.jpeg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">beautiful venue</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Merryland <br>
+              Restaurant and Lounge
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Stunning views and unforgettable moments await
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/home/landmerry.jpeg" width="1880" height="950" alt="" class="img-cover" style="filter: brightness(0.65);">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">premium experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Welcome to Our <br>
+              Riverside Paradise
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Relax in our beautiful land setting with breathtaking views
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Discover</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Merryland <br>
+              Restaurant
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              where cocktails Glow like Nairobi skyline
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Ordinary drinks  <br>
+              melt like wax here
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ever tasted a sunset swirled into glass.  ignites
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Every flavour tells <br>
+              a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <a href="menu.html" class="has-before hover:shine">
+              <div class="slider-bg">
+                <img src="./assets/images/chapo.jpeg" width="1880" height="950" alt="" class="img-cover">
+              </div>
+            </a>
+
+            <p class="label-2 section-subtitle slider-reveal">signature dish</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Taste Our <br>
+              Chapo Special
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Experience the authentic flavors of our house specialty
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#reservation" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Showing how thrilling drinks, appetizers, and culinary delights await you in our appetizer area at Merryland. Experience the perfect blend of flavors and craftsmanship.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/chapo.jpeg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+
+            <p class="section-text">
+              Indulge in the art of culinary excellence at Merry Land Restaurant, where every dish and drink is crafted to create unforgettable moments. 🎉 <strong>LIMITED TIME OFFER:</strong> Purchase any 5 premium liquor drinks and enjoy a complimentary delicious choma on us! Experience the perfect pairing of our signature cocktails with our legendary grilled specialties. Don't just dine—create memories with flavors that linger long after your meal.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="https://wa.me/254741170871" class="body-1 contact-number hover-underline" target="_blank">0741170871</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/merryland hotel.jpeg" width="570" height="570" loading="lazy" alt="Merry Land Hotel"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/home/waiter.jpeg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/evoo bee.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Dish</p>
+
+            <h2 class="headline-1 section-title">Nyama Choma</h2>
+
+            <p class="section-text">
+              Succulent grilled meat perfected to tender perfection. Our signature Nyama Choma is marinated in special spices and char-grilled over an open flame, delivering an unforgettable taste of authentic Kenyan cuisine that will keep you coming back for more.
+            </p>
+
+            <a href="menu.html" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Special drinks</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/amarula.jpeg" width="100" height="100" loading="lazy" alt="Amarula"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">Amarula</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Amarula" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium quality liqueur
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/jameson.jpg" width="100" height="100" loading="lazy" alt="Jameson"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">Jameson</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Jameson" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium Irish whiskey
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/smirnoff vodka.jpeg" width="100" height="100" loading="lazy" alt="Smirnoff Vodka"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">Smirnoff Vodka</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Smirnoff Vodka" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium vodka selection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/captain morgan.jpg" width="100" height="100" loading="lazy" alt="Captain Morgan"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">Captain Morgan</a>
+                    </h3>
+
+                    <span class="badge label-1">Premium</span>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Captain Morgan" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium rum selection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/king fisher.jpeg" width="100" height="100" loading="lazy" alt="King Fisher"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">King Fisher</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in King Fisher" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium beer selection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/beers/gilbeys.jpg" width="100" height="100" loading="lazy" alt="Gilbeys"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="menu.html" class="card-title">Gilbeys</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Gilbeys" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Premium gin selection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+          </p>
+
+          <a href="menu.html" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DELICIOUS FOOD
+      -->
+
+      <section class="section menu" aria-label="delicious-food" id="food">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Culinary Delights</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Food</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/kienyenji chicken.jpeg" width="100" height="100" loading="lazy" alt="Kienyenji Chicken"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kienyenji Chicken</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Kienyenji Chicken" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Succulent free-range chicken with traditional flavors
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/mbuzi choma.jpeg" width="100" height="100" loading="lazy" alt="Mbuzi Choma"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Mbuzi Choma</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Mbuzi Choma" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Grilled goat meat perfectly seasoned and tender
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chapati.jpeg" width="100" height="100" loading="lazy" alt="Chapati"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chapati</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chapati" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Soft and flaky traditional flatbread
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/fish fillet.jpeg" width="100" height="100" loading="lazy" alt="Fish Fillet"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Fish Fillet</a>
+                    </h3>
+
+                    <span class="badge label-1">Fresh</span>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Fish Fillet" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh grilled fish fillet with aromatic spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/meat kebab.jpeg" width="100" height="100" loading="lazy" alt="Meat Kebab"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Meat Kebab</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Meat Kebab" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Marinated meat skewers grilled to perfection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chicken salad.jpeg" width="100" height="100" loading="lazy" alt="Chicken Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Salad</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chicken Salad" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh greens with tender grilled chicken pieces
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="food-menu.html" class="btn btn-primary">
+            <span class="text text-1">View All Food Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Food Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image" style="background-image: url('./assets/images/merry.jpeg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-1 section-title">What Our Customers Say</h2>
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/home/waiter merry.png" width="100" height="100" loading="lazy" alt="Waiter Merry"
+              class="img">
+
+            <p class="label-2 profile-name">Waiter Merry</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form id="reservationForm" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="https://wa.me/254741170871" class="link" target="_blank">0741170871</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="county" class="input-field" required>
+                    <option value="">Select County</option>
+                    <option value="kajiado">Kajiado</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="location" class="input-field" required>
+                    <option value="">Select Location</option>
+                    <option value="kiserian">Kiserian</option>
+                    <option value="matasia">Matasia</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field" required>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="time" class="input-field" required>
+                    <option value="">Select Time</option>
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary" onclick="sendReservationToWhatsApp(event)">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="https://wa.me/254741170871" class="body-1 contact-number hover-underline" target="_blank">0741170871</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Kiserian Town Riverside<br>
+                Off Kiserian Ngong Road
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">Unlock hidden gem of merryland</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/home/counter.jpeg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/home/cool drink.jpeg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    cool drinks .
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Blog</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Blog</span>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OUR CHEFS
+      -->
+
+      <section class="section bg-black-10 text-center" aria-label="our-chefs" id="chefs">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Culinary Excellence</p>
+
+          <h2 class="headline-1 section-title">Meet Our Renowned Waiters</h2>
+
+          <p class="section-text">
+            Our professional service team provides exceptional hospitality with a personal touch. Each staff member is trained to deliver outstanding customer service and ensure your dining experience is memorable at Merry Land Restaurant.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/home/waiter.jpeg" width="285" height="336" loading="lazy" alt="Chef John"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">waiter</a>
+                  </h3>
+
+                  <p class="label-1 card-text" style="font-weight: 600; color: #ff9500;">Head Waiter</p>
+
+                  <p class="body-4" style="margin: 12px 0; line-height: 1.6;">
+                    With 15 years of exceptional service experience, our Head Waiter leads the team with professionalism and dedication. Specializing in customer relations and ensuring every guest receives personalized attention and memorable service.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/home/waiter merry.png" width="285" height="336" loading="lazy" alt="Chef Maria"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">waiter</a>
+                  </h3>
+
+                  <p class="label-1 card-text" style="font-weight: 600; color: #ff9500;\">Professional Waiter</p>
+
+                  <p class="body-4" style="margin: 12px 0; line-height: 1.6;\">
+                    Our experienced waiter brings 8 years of hospitality excellence and professionalism. Dedicated to providing attentive service with a warm personality, ensuring every guest enjoys an exceptional dining experience.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Kiserian Town Riverside, Off Kiserian Ngong Road
+          </address>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+
+          <a href="https://wa.me/254741170871" class="body-4 contact-link" target="_blank">Booking Request : 0741170871</a>
+
+          <p class="body-4">
+            Open : 24 Hours
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Drinks</a>
+          </li>
+
+          <li>
+            <a href="food-menu.html" class="label-2 footer-link hover-underline">Food</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100063071087092&mibextid=ZbWKwL" class="label-2 footer-link hover-underline" target="_blank">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@merry_land_kiserian?_r=1&_t=ZS-96UPIjH6TMC" class="label-2 footer-link hover-underline" target="_blank">TikTok</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/maps/search/HMJP+F7,+Kiserian" class="label-2 footer-link hover-underline" target="_blank">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Grilli. All Rights Reserved | Crafted by <a href=""
+            target="_blank" class="link">AURA STACK COMPANY</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - Chatbot Widget
+  -->
+  <div class="chatbot-widget" id="chatbotWidget">
+    <div class="chatbot-header">
+      <h3 class="chatbot-title">Chat with Us</h3>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+    
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot-message">
+        <p>👋 Hello! Welcome to Merry Land Restaurant. How can we help you today?</p>
+      </div>
+    </div>
+    
+    <div class="chatbot-quick-replies" id="quickReplies">
+      <button class="quick-reply-btn" onclick="sendQuickReply('What are your opening hours?')">Hours</button>
+      <button class="quick-reply-btn" onclick="sendQuickReply('What is your location?')">Location</button>
+      <button class="quick-reply-btn" onclick="sendQuickReply('How do I make a reservation?')">Booking</button>
+      <button class="quick-reply-btn" onclick="sendQuickReply('Tell me about the menu')">Menu</button>
+    </div>
+    
+    <div class="chatbot-input-area">
+      <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..." autocomplete="off">
+      <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
+        <ion-icon name="send-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+
+  <!-- Chatbot Toggle Button -->
+  <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat" title="Chat with us">
+    <ion-icon name="chatbubbles-outline"></ion-icon>
+  </button>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Chatbot Script -->
+  <script>
+    'use strict';
+
+    const chatbot = {
+      toggle: document.getElementById('chatbotToggle'),
+      widget: document.getElementById('chatbotWidget'),
+      messagesContainer: document.getElementById('chatbotMessages'),
+      input: document.getElementById('chatbotInput'),
+      sendBtn: document.getElementById('chatbotSend'),
+      closeBtn: document.getElementById('chatbotClose'),
+      quickReplies: document.getElementById('quickReplies'),
+
+      responses: {
+        'opening hours': 'We are open 24 hours daily, 7 days a week. Come visit us anytime!',
+        'hours': 'We are open 24 hours daily, 7 days a week. Come visit us anytime!',
+        'location': 'We\'re located at Kiserian town riverside, off Kiserian Ngong Road, Kajiado County. Merry Land Restaurant is easily accessible and features a great atmosphere!',
+        'address': 'Our address: Kiserian town riverside, off Kiserian Ngong Road, Kajiado County. Come visit us!',
+        'direction': 'We\'re located at Kiserian town riverside, off Kiserian Ngong Road. It\'s easy to find - just head off Kiserian Ngong Road towards the riverside area. Call us if you need more directions: 0741170871',
+        'where': 'You can find us at Kiserian town riverside, off Kiserian Ngong Road, Kajiado County. We\'re right in a beautiful riverside location!',
+        'reservation': 'To make a reservation, please call us at 0741170871 or fill out the Online Reservation form on our website!',
+        'booking': 'To make a booking, please call us at 0741170871 or fill out the Online Reservation form on our website!',
+        'how do i make': 'To make a reservation, please call us at 0741170871 or fill out the Online Reservation form on our website!',
+        'menu': 'We offer a variety of delicious items! Check out our complete menu at food-menu.html',
+        'food': 'We offer amazing food! Visit our Food Menu page at food-menu.html to see all our delicious options!',
+        'chicken': 'We have Kienyenji Chicken (succulent free-range chicken) and other chicken dishes! View all food options at food-menu.html',
+        'kienyenji': 'Our Kienyenji Chicken is succulent free-range chicken with traditional flavors. Check out our Food Menu page at food-menu.html for more details!',
+        'mbuzi': 'Our Mbuzi Choma is grilled goat meat perfectly seasoned and tender. See more delicious options at food-menu.html',
+        'choma': 'Our signature Nyama Choma is succulent grilled meat perfected to tender perfection. Visit food-menu.html to see all our grilled specialties!',
+        'fish': 'We have fresh Fish Fillet grilled with aromatic spices! Explore all our food options at food-menu.html',
+        'kebab': 'Our Meat Kebab are marinated meat skewers grilled to perfection! Check our Food Menu page at food-menu.html',
+        'salad': 'We offer fresh Chicken Salad with tender grilled chicken pieces! See all our food options at food-menu.html',
+        'chapati': 'Our Chapati is soft and flaky traditional flatbread! View our complete Food Menu at food-menu.html',
+        'drink': 'We have premium drinks including Amarula, Jameson, Smirnoff Vodka, Captain Morgan, King Fisher, and Gilbeys. Check our Menus page!',
+        'drinks': 'We have premium drinks including Amarula, Jameson, Smirnoff Vodka, Captain Morgan, King Fisher, and Gilbeys. Check our Menus page!',
+        'contact': 'You can reach us at 0741170871 or email booking@merrylandrestaurant.com. We\'re happy to help!',
+        'phone': 'Our phone number is 0741170871. Feel free to call us for reservations or inquiries!',
+        'email': 'You can email us at booking@merrylandrestaurant.com for any inquiries.',
+        'special offer': 'We have a LIMITED TIME OFFER: Purchase any 5 premium liquor drinks and enjoy a complimentary delicious choma on us!',
+        'offer': 'We have a LIMITED TIME OFFER: Purchase any 5 premium liquor drinks and enjoy a complimentary delicious choma on us!',
+        'hello': 'Hello! 👋 Welcome to Merry Land Restaurant. How can we help you?',
+        'hi': 'Hi there! 👋 How can we assist you today?',
+        'thanks': 'You\'re welcome! Is there anything else we can help you with?',
+        'thank you': 'You\'re welcome! Is there anything else we can help you with?',
+        'default': 'Thanks for your question! For more information, please call us at 0741170871 or visit our website. How else can we help?'
+      },
+
+      init() {
+        this.toggle.addEventListener('click', () => this.toggleWidget());
+        this.closeBtn.addEventListener('click', () => this.toggleWidget());
+        this.sendBtn.addEventListener('click', () => this.sendMessage());
+        this.input.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') this.sendMessage();
+        });
+      },
+
+      toggleWidget() {
+        this.widget.classList.toggle('active');
+        this.toggle.classList.toggle('hidden');
+        if (this.widget.classList.contains('active')) {
+          this.input.focus();
+        }
+      },
+
+      sendMessage() {
+        const message = this.input.value.trim();
+        if (!message) return;
+
+        // Add user message
+        this.addMessage(message, 'user');
+        this.input.value = '';
+
+        // Get bot response
+        setTimeout(() => {
+          const response = this.getBotResponse(message);
+          this.addMessage(response, 'bot');
+        }, 500);
+      },
+
+      addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${sender}-message`;
+        messageDiv.innerHTML = `<p>${this.escapeHtml(text)}</p>`;
+        this.messagesContainer.appendChild(messageDiv);
+        this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+
+        // Hide quick replies after user sends a message
+        if (sender === 'user' && this.quickReplies) {
+          this.quickReplies.style.display = 'none';
+        }
+      },
+
+      getBotResponse(userMessage) {
+        const message = userMessage.toLowerCase();
+        
+        for (const [key, response] of Object.entries(this.responses)) {
+          if (message.includes(key)) {
+            return response;
+          }
+        }
+        
+        return this.responses['default'];
+      },
+
+      escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    };
+
+    // Initialize chatbot when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => chatbot.init());
+
+    // Function to handle quick replies
+    function sendQuickReply(text) {
+      document.getElementById('chatbotInput').value = text;
+      chatbot.sendMessage();
+    }
+
+    // Function to send reservation to WhatsApp
+    function sendReservationToWhatsApp(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('reservationForm');
+      const name = form.elements['name'].value;
+      const phone = form.elements['phone'].value;
+      const county = form.elements['county'].value;
+      const location = form.elements['location'].value;
+      const date = form.elements['reservation-date'].value;
+      const time = form.elements['time'].value;
+      const message = form.elements['message'].value;
+      
+      // Validate required fields
+      if (!name || !phone || !county || !location || !date || !time) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Create message for WhatsApp
+      const whatsappMessage = `*Reservation Request*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*County:* ${encodeURIComponent(county)}%0A*Location:* ${encodeURIComponent(location)}%0A*Date:* ${encodeURIComponent(date)}%0A*Time:* ${encodeURIComponent(time)}%0A*Message:* ${message ? encodeURIComponent(message) : 'N/A'}`;
+      
+      // Open WhatsApp with pre-filled message
+      const whatsappUrl = `https://wa.me/254741170871?text=${whatsappMessage}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/254763398372?text=Hi%20Merry%20Land%20Restaurant!%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-button" title="Chat with us on WhatsApp" aria-label="WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </a>
+
+</body>
+
+</html>

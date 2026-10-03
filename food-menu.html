@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Food Menu - Best Restaurant in Kiserian & Kajiado | Nyama Choma & Grilled Specialties</title>
+  <meta name="title" content="Best Food Menu - Merry Land Restaurant Kajiado">
+  <meta name="description" content="Explore our food menu at Kajiado's best restaurant. Authentic Kenyan cuisine including Nyama Choma, Kienyenji Chicken, Mbuzi Choma, Fish Fillet, and more. Premium dining in Kiserian, Kajiado County. Visit Merry Land Restaurant for unforgettable grilled specialties.">
+ 
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Custom menu styling -->
+  <style>
+    .menu .grid-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .menu .menu-card {
+      display: flex !important;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .menu .menu-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .menu .card-banner {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .menu .card-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .menu .menu-card > div:last-child {
+      flex: 1;
+    }
+
+    .menu .title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .menu .title-3 {
+      margin: 0;
+    }
+
+    .menu .card-text {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .menu .grid-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">merry land restaurant </p>
+  </div>
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Merry Land
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+254763398372" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">0763398372</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@merrylandrestaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html#home" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Drinks</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="food-menu.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Food</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="chefs.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            merry  <br>
+            land restaurant
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">info@.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+254763398372" class="body-1 contact-number hover-underline">
+            0763398372
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="index.html" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" style="margin-top: 80px;">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Culinary Excellence</p>
+
+          <h2 class="headline-1 section-title text-center">Our Delicious Food Menu</h2>
+
+          <p class="section-text text-center" style="margin-bottom: 40px;">
+            Discover our carefully curated selection of authentic and delicious food prepared with the finest ingredients.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/kienyenji chicken.jpeg" width="100" height="100" loading="lazy" alt="Kienyenji Chicken"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kienyenji Chicken</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Kienyenji Chicken" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Succulent free-range chicken with traditional flavors
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/mbuzi choma.jpeg" width="100" height="100" loading="lazy" alt="Mbuzi Choma"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Mbuzi Choma</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Mbuzi Choma" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Grilled goat meat perfectly seasoned and tender
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chapati.jpeg" width="100" height="100" loading="lazy" alt="Chapati"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chapati</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chapati" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Soft and flaky traditional flatbread
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/fish fillet.jpeg" width="100" height="100" loading="lazy" alt="Fish Fillet"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Fish Fillet</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Fish Fillet" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh grilled fish fillet with aromatic spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/meat kebab.jpeg" width="100" height="100" loading="lazy" alt="Meat Kebab"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Meat Kebab</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Meat Kebab" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Marinated meat skewers grilled to perfection
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chicken salad.jpeg" width="100" height="100" loading="lazy" alt="Chicken Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Salad</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chicken Salad" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh greens with tender grilled chicken pieces
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/ugali.jpeg" width="100" height="100" loading="lazy" alt="Ugali"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ugali</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Ugali" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Creamy cornmeal staple served with accompaniments
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/beef burger.jpg" width="100" height="100" loading="lazy" alt="Beef Burger"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Beef Burger</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Beef Burger" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Juicy beef patty with fresh toppings and sauce
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chips masala.jpeg" width="100" height="100" loading="lazy" alt="Chips Masala"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chips Masala</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chips Masala" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crispy fries seasoned with aromatic spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/chicken wings.jpeg" width="100" height="100" loading="lazy" alt="Chicken Wings"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Wings</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Chicken Wings" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Spicy and crispy chicken wings perfected
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/fruit salad.jpg" width="100" height="100" loading="lazy" alt="Fruit Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Fruit Salad</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Fruit Salad" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh seasonal fruits with light dressing
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/foods/samosa meat.png" width="100" height="100" loading="lazy" alt="Samosa"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Samosa Meat</a>
+                    </h3>
+
+                    <a href="https://wa.me/254763398372?text=Hi, I'm interested in Samosa Meat" target="_blank" class="span title-2" style="display: inline-block; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Ask Price</a>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crispy fried pastry filled with spiced meat
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            All our food is prepared fresh daily with quality ingredients
+          </p>
+
+          <a href="index.html" class="btn btn-primary">
+            <span class="text text-1">Back to Home</span>
+
+            <span class="text text-2" aria-hidden="true">Back to Home</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Location
+          </address>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+
+          <a href="tel:+254763398372" class="body-4 contact-link">Booking Request : 0763398372</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 01:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Drinks</a>
+          </li>
+
+          <li>
+            <a href="food-menu.html" class="label-2 footer-link hover-underline">Food</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html#chefs" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="label-2 footer-link hover-underline">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Grilli. All Rights Reserved | Crafted by <a href=""
+            target="_blank" class="link">AURA STACK COMPANY</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/254763398372?text=Hi%20Merry%20Land%20Restaurant!%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-button" title="Chat with us on WhatsApp" aria-label="WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </a>
+
+</body>
+
+</html>
